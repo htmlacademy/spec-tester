@@ -1,0 +1,11 @@
+node_modules/
+*.log
+.DS_Store
+.bundle/
+build/
+Gemfile.lock
+.idea
+coverage
+docs
+.vscode
+/test-projects/
