@@ -1,8 +1,13 @@
 {
-  "name": "spec-tester",
+  "name": "@htmlacademy/spec-tester",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "prepublishOnly": "npm run build",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "eslint ./src/**/*.ts",
