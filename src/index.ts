@@ -45,7 +45,10 @@ const jestConfig = {
   globalTeardown: "jest-environment-puppeteer/teardown",
   testEnvironment: "jest-environment-puppeteer",
   setupFilesAfterEnv: ["expect-puppeteer"],
-  testRegex: "\\.test\\.js$"
+  testRegex: "\\.test\\.js$",
+  haste: {
+    providesModuleNodeModules: [".*"]
+  }
 };
 
 const tests = join(__dirname, "tests", argv._[0]);
