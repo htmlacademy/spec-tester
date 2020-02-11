@@ -46,10 +46,7 @@ const jestConfig = {
   testEnvironment: "jest-environment-puppeteer",
   setupFilesAfterEnv: ["expect-puppeteer"],
   testRegex: "\\.test\\.js$",
-  testPathIgnorePatterns: ["<rootDir>/(node_modules)/"],
-  haste: {
-    providesModuleNodeModules: ["@htmlacademy/spec-tester"]
-  }
+  testPathIgnorePatterns: ["<rootDir>/(node_modules)/"]
 };
 
 const tests = join(__dirname, "tests", argv._[0]);
