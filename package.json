@@ -5,6 +5,9 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "prepublishOnly": "npm run build",
+  "bin": {
+    "check": "build/index.js"
+  },
   "files": [
     "build/**/*"
   ],
