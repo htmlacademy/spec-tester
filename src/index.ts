@@ -48,7 +48,7 @@ const jestConfig = {
   testRegex: "\\.test\\.js$",
   testPathIgnorePatterns: ["<rootDir>/(node_modules)/"],
   haste: {
-    providesModuleNodeModules: [".*"]
+    providesModuleNodeModules: ["@htmlacademy/spec-tester"]
   }
 };
 
