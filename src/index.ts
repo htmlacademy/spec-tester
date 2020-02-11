@@ -2,7 +2,7 @@
 import yargs from "yargs";
 import { existsSync, readdirSync } from "fs";
 import { join, extname } from "path";
-import { runCLI } from "jest";
+import { runCLI } from "@jest/core";
 import { startServer, stopServer } from "./server";
 const projects = readdirSync(join(__dirname, "tests"));
 
